@@ -62,7 +62,7 @@ spec:
           - "-listen-client-urls"
           - "http://0.0.0.0:2379"
       nodeSelector:
-        kubernetes.io/hostname: node2
+        kubernetes.io/hostname: controlplane
 
 ---
 apiVersion: v1
@@ -168,5 +168,5 @@ spec:
         ports:
         - containerPort: 80
       nodeSelector:
-        kubernetes.io/hostname: node1
+        kubernetes.io/hostname: node01
 ---
