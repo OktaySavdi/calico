@@ -51,7 +51,7 @@ spec:
       serviceAccountName: database
       containers:
       - name: database
-        image: calico/yaobank-database:certification
+        image: quay.io/oktaysavdi/calico:yaobank-database
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 2379
@@ -110,7 +110,7 @@ spec:
       serviceAccountName: summary
       containers:
       - name: summary
-        image: calico/yaobank-summary:certification
+        image: quay.io/oktaysavdi/calico:yaobank-summary
         imagePullPolicy: Always
         ports:
         - containerPort: 80
@@ -163,7 +163,7 @@ spec:
       serviceAccountName: customer
       containers:
       - name: customer
-        image: calico/yaobank-customer:certification
+        image: quay.io/oktaysavdi/calico:yaobank-customer
         imagePullPolicy: Always
         ports:
         - containerPort: 80
